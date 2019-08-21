@@ -1,0 +1,550 @@
+/*General Styles*/
+html {
+  scroll-behavior: smooth;
+}
+body{
+	background-color: #F4F3F0;
+	font-family: 'Livvic', sans-serif;
+	color: #343E3D;
+	margin: 0;
+	padding: 0;
+}
+.section-title{
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	padding: 40px 0 20px 0;
+}
+.nav{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	background-color: #FC7753;
+	padding: 20px 0 20px 0;
+}
+.nav-link{
+	display: inline-block;
+	padding: 0 30px 0 30px;
+	font-size: 20px;
+	cursor:pointer;
+}
+.nav-link:hover{
+	color:#F4F3F0;
+}
+.nav a{
+	text-decoration: none;
+	color: #343E3D;
+
+}
+.nav a:hover{
+	color:#F4F3F0;
+
+}
+.content{
+	display:inline-block;
+	padding: 30px 100px 50px 100px;
+	height: auto;
+	width: calc( 100% - 200px);
+
+}
+.hide{
+	display: none;
+}
+.fade{
+	color:#F4F3F0;
+	font-style: italic;
+}
+/*Landing Page*/
+.landing{
+	height: calc(100vh - 65px);
+	width: 100%;
+}
+.name-banner{
+	background-color: #66D7D1;
+	height: auto;
+	width: 55%;
+	text-align: center;
+}
+.name-banner p{
+	font-size: 60px;
+	margin: 80px 40px 80px 40px;
+	padding: 70px;
+}
+.circle{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	background-color: #F5CB5C;
+	position: absolute;
+	bottom: 60px;
+	right: 10%;
+}
+.circle img{
+	border-radius: 50%;
+	height: 250px;
+	width:250px;
+	position: relative;
+    margin: 25px 25px 25px 25px;
+
+}
+/*About Section*/
+.about{
+	width: 100%;
+	background-color:#E2E0E0;
+	padding-bottom: 20px;
+}
+
+.about-rectangle{
+	width:auto;
+	height: auto;
+	display:inline-block;
+	background-color: #FC7753;
+	padding: 0;
+	vertical-align: top;
+	text-align: center;
+}
+.about-rectangle img{
+	height:auto;
+	width:250px;
+	position: relative;
+	vertical-align: middle;
+    margin: 25px 25px;
+}
+.about-text{
+	display:inline-block;
+	margin-left: 60px;
+	width: calc(100% - 360px);
+	vertical-align: top;
+}
+.about-text p{
+	margin-top:0px;
+	margin-bottom: 20px;
+}
+/*Experience Section*/
+.experience{
+	width: 100%;
+	padding-bottom:20px;
+}
+.history{
+	margin-bottom: 20px;
+}
+.work-item{
+	width: 100%;
+	display: inline-block;
+	padding: 30px 0;
+}
+.work-logo{
+	width: 150px;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.work-logo img{
+	width: 100%;
+	height: auto;
+}
+.work-date{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.work-info{
+	width: calc(100% - 210px);
+	margin-left:60px;
+	display: inline-block;
+	vertical-align: top;
+}
+.article-links{
+	margin-top: 5px;
+	display: block;
+	margin-left: 10px;
+}
+.experience-buttons a{
+	text-decoration:none;
+	text-align: center;
+	color: #343E3D;
+	font-size: 25px;
+	width: 100%;
+}
+ul{
+  list-style-type: square;
+  margin: 5px 0 0 0;
+}
+li a{
+	margin-left: 20px;
+
+}
+li{
+	padding-top: 5px;
+}
+.work-desc a{
+	text-decoration: none;
+	color:#FC7753;
+	font-weight: 600;
+}
+.work-desc a:hover{
+	color:#66D7D1;
+}
+.work-title{
+	font-weight: 600;
+	font-size:20px;
+	margin-bottom: 10px;
+}
+.connect-button{
+	display:inline-block;
+	width: calc(50% - 30px);
+	background-color:#66D7D1;
+	text-align: center;
+	padding: 25px 0 25px 0;
+}
+
+/*Connect Section*/
+.connect{
+	width: 100%;
+	background-color:#F5CB5C;
+	text-align: center;
+}
+.left{
+	margin-right: 30px;
+}
+.right{
+	margin-left: 30px;
+}
+.left:hover{
+	background-color: #FC7753;
+	color: #F4F3F0;
+}
+.right:hover{
+	background-color: #FC7753;
+	color: #F4F3F0;
+}
+.connect a{
+	text-decoration:none;
+	color: #343E3D;
+	font-weight: 600;
+	width: 100%;
+}
+.connect a:hover{
+	color:#FC7753;
+}
+/*Blog Styles*/
+.blog-landing{
+	height: calc(100vh - 65px);
+	width: 100%;
+}
+/*New Posts Section*/
+.newest-posts{
+	background-color:#E2E0E0;
+	padding-bottom: 55px;
+	text-align: center;
+	font-size: 20px;
+}
+.posts-grid{
+	padding-top: 15px;
+	display:inline-block;
+	text-align: center;
+	width: 100%;
+}
+.posts-row{
+	display: inline-block;
+	width: 50%;
+}
+.post-square{
+	display:inline-block;
+	height: 100px;
+	width: calc(50% - 80px);
+	margin: 20px;
+	padding: 20px;
+	padding-top: 70px;
+	background-color:#F5CB5C; 
+	vertical-align: middle;
+	cursor: pointer;
+
+}
+.post-square:hover{
+	background-color:#FC7753; 
+	color:#F4F3F0;
+}
+.all-button{
+	text-align: center;
+	width: calc(100% - 60px);
+	height: auto;
+	background-color:#66D7D1 ;
+	padding: 30px 10px;
+	margin: 20px;
+	cursor: pointer;
+
+}
+.all-button:hover{
+	background-color: #FC7753;
+	color:#F4F3F0;
+}
+/*All Posts Section*/
+.allposts {
+	background-color:#F5CB5C; 
+	height: auto;
+}
+.two-col{
+	display: inline-block;
+	width: 100%;
+}
+.my-col{
+	display: inline-block;
+	margin-right: 40px;
+	width: calc(50% - 40px);
+}
+.my-col li:hover{
+	color:#FC7753;
+	cursor:pointer;
+}
+/*Blog Content Section*/
+.story{
+	border-width: 5px;
+	border-color: #FC7753;
+	border-style: solid;
+	padding: 0 20px 20px 20px;
+	margin-top: 40px;
+
+}
+.blog-date{
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.blog-content{
+}
+.blog-tags{
+	margin-top: 10px;
+	color:#66D7D1;
+	font-weight: 600;
+	display: inline-block;
+}
+.tag{
+	display: inline-block;
+	margin-right: 10px;
+}
+/*.tag:hover{
+	cursor: pointer;
+	color: #FC7753;
+}*/
+.circle p{
+	text-align: center;
+	margin: 100px 30px 0 30px;
+	font-style: italic;
+
+}
+.circle-text{
+	text-align: center;
+	margin: 10px 20px;
+	font-size: 25px;
+	font-weight: 600;
+}
+.blog-landing .circle:hover{
+	cursor: pointer;
+	background-color: #E2E0E0;
+}
+.story a{
+	text-decoration: none;
+	color: #FC7753;
+	font-weight: 600;
+}
+.story a:hover{
+	color:#66D7D1;
+}
+.blog-images{
+	display: inline-block;
+	width: 100%;
+}
+.blog-images img{
+	width: calc(50% - 12px);
+	height: auto;
+	margin-top: 20px;
+}
+.left-blog{
+	margin-right: 12px;
+}
+.right-blog{
+	margin-left:12px;
+}
+/*Media Queries*/
+@media screen and (max-width: 1000px) {
+	.name-banner p {
+	    font-size: 50px;
+	    margin: 50px 0 50px 0;
+	}
+	.circle {
+	    height: 250px;
+	    width: 250px;
+	}
+	.circle img{
+		height: 200px;
+		width:200px;
+	}
+	.post-square{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height:120px;
+	}
+	.circle p{
+		margin-top: 70px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.name-banner{
+		width: 100%;
+		top: 200px;
+	}
+	.name-banner p{
+		padding: 40px;
+	}
+	.circle {
+	   	text-align: center;
+	   	display: block;
+    	left: calc(50% - 100px);
+    	height: 200px;
+	    width: 200px;
+	}
+	.circle img{
+		height: 170px;
+		width:170px;
+		margin: 15px 15px 15px 15px;
+
+	}
+	.circle p{
+		margin-top: 40px;
+	}
+	.circle-text{
+		font-size:22px;
+	}
+	.content {
+	    display: inline-block;
+	    padding: 30px 50px 50px 50px;
+	    height: auto;
+	    width: calc( 100% - 100px);
+	}
+	.about-rectangle{
+		display: none;
+	}
+	.about-text{
+		display: block;
+		margin: 0;
+		width: 100%;
+	}
+	.connect-button {
+    	width: calc(50% - 15px);
+    }
+    .left{
+		margin-right: 15px;
+	}
+	.right{
+		margin-left: 15px;
+	}
+	.work-logo{
+		display: block;
+		width: 40%;
+		margin-left: 30%;
+		margin-bottom: 15px;
+	}
+	.work-info{
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+	.post-square{
+		padding-top: 40px;
+		height: 90px;
+	}
+	.posts-row{
+		display: block;
+		width: 100%;
+	}.my-col{
+		display: block;
+		margin-right: 0;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.nav-link{
+		display: block;
+    	padding: 2px 0;
+    	font-size:16px;	
+
+    }
+	.name-banner p{
+		margin: 0;
+		margin-top: 40px;
+		padding: 10px 0 10px 0;
+		font-size: 26px;
+	}
+	.section-title{
+		font-size: 22px;
+	}
+	.work-date{
+		font-size:16px;
+	}
+	.work-title{
+		font-size:18px;
+		text-align: center;
+	}
+	.connect-button{
+		font-size:18px;
+		display: block;
+		width: 100%;
+		margin:10px 0;
+	}
+	.posts-grid{
+		font-size: 16px;
+	}
+	.circle{
+		bottom:10vh;
+		font-size: 16px;
+	}
+	.circle-text{
+		font-size: 20px;
+	}
+	.landing {
+    	height: calc(100vh - 195px);
+    }
+    .work-logo{
+		display: block;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.article-links a{
+		margin: 0;
+	}
+	.article-links{
+		margin-left: 0;
+	}
+	.post-square{
+		display: block;
+		width: calc(100% - 80px);
+		margin: 20px;
+		height: 50px;
+		padding-bottom: 20px;
+	}
+	.blog-images img{
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+		display: block;
+	}
+}
+@media screen and (min-width: 1290px){
+	.circle{
+		height: 400px;
+		width: 400px;
+		bottom: 10%;
+		right: 10%;
+	}
+	.circle img{
+		height: 320px;
+		width:320px;
+	    margin: 40px 40px 40px 40px;
+
+	}
+}
