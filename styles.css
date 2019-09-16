@@ -10,10 +10,13 @@ body{
 	padding: 0;
 }
 .section-title{
-	font-size: 30px;
-	font-weight: 600;
 	text-align: center;
 	padding: 40px 0 20px 0;
+}
+.section-title h2{
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0;
 }
 .nav{
 	text-align: center;
@@ -66,10 +69,11 @@ body{
 	width: 55%;
 	text-align: center;
 }
-.name-banner p{
+.name-banner h1{
 	font-size: 60px;
 	margin: 80px 40px 80px 40px;
 	padding: 70px;
+	font-weight: 400;
 }
 .circle{
 	border-radius: 50%;
