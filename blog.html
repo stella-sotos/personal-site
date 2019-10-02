@@ -30,20 +30,32 @@
       <div class="name-banner">
         <h1>stella's blog</h1>
       </div>
-      <div class="circle blog-circle"><p >check out my newest post:</p> <div class="circle-text">Welcome to My Personal Site!</div></div>
+      <div class="circle blog-circle"><p >check out my newest post:</p> <div class="circle-text">My Recruiting Experience</div></div>
     </div>
     <div class="newest-posts content">
         <div class="section-title"><h2>my newest posts</h2></div>
         <div class="posts-grid">
-          <div class="posts-row"><div class="post-square newest-square">
-            Welcome to My Personal Site!</div><div class="post-square second-square">A Great Summer at Capital One
-            </div></div><div class="posts-row"><div class="post-square fade">Check back for<br>more posts</div><div class="post-square  fade">coming soon!
+          <div class="posts-row"><div class="post-square recruiting-square">My Recruiting Experience
+           </div><div class="post-square welcome-square"> Welcome to My Personal Site!
+            </div></div><div class="posts-row"><div class="post-square capone-square">A Great Summer<br> at Capital One</div><div class="post-square  fade">coming soon!
             </div></div>
             <div class="all-button">view all posts</div>
         </div>
 
     </div>
     <div class="blog-section content">
+      <div class="story recruiting-story">
+        <div class="section-title"><h2>Recruiting Post (Update Title, tbd)</h2></div>
+        <div class="blog-date">October 30, 2019</div>
+        <div class="blog-content">
+          Recruiting is stressful! I've been figuring out where I'll be working full-time since July - JULY! It's the end of October now, and at last I know where I'm ending up. It wasn't easy getting here, but now that I'm on the otherside, I thought I'd share my experiences.<br><br>
+          I started off in a good spot - I loved my internship and was lucky enough to receive a return offer. From there I narrowed my search to companies I would consider going to over Capital One. In the summer, I started reaching out to my network including any recruiters I had spoken to during my internship search and friends who worked or interned at companies I was interested in. I'm still pretty connected to many of my high school classmates which proved super helpful during this stage (shoutout TJHSST!).<br><br>
+          Soon enough, I was interviewing all over the place. Some companies required coding challenges, while others went straight to phone screens. Regardless, I had to seriously brush up on my technical interview skills. My primary resources were LeetCode for practice problems, the book, Elements of Programming Interviews (EPI), and the YouTube channel, Back To Back SWE. I focused mostly on improving my dynamic programming skills and algorithm knowledge, as well as just being quicker on my feet when it came to common types of interview questions. I visited a few companies on-site and I was surprised by how prepared I felt. However, I don't think it was my technical knowledge that ended up helping me get my offers, instead I believe it was my communication skills that gave me my edge. I talked my interviewers through each stage of my thought process, thouroughly tested my code over edge cases, and iterated as necessary. In one of my first interviews I was sure that I flunked the technical problem I was given, but at the very end my interviewer told me that she liked how I thought. I ended up getting that offer. Communication skills can make all the difference!<br><br>
+          It was a lot to manage, but once I got through all my interviews I was so excited to receieve a few offers. The decision, on the other hand, started to get me down. I loved my internship at Capital One and they offered me a spot in New York, where I so badly wanted to be. On the other hand, I received incredible offers from Microsoft and Facebook. The opportunity for learning and growth at those companies would be hard to turn down. <... talk about actual decision> </div>
+        <div class="blog-tags">
+          <div class="tag">#recruiting</div><div class="tag">#futureEngineer</div>
+        </div>
+      </div>
       <div class="story welcome-story">
         <div class="section-title"><h2>Welcome to My Personal Site!</h2></div>
         <div class="blog-date">August 20, 2019</div>
@@ -89,8 +101,9 @@
         <div class="two-col">
           <div class="my-col">
             <ul>
-              <li class="newest-link">Welcome to My Personal Site!</li>
-              <li class="second-link">A Great Summer at Capital One</li>
+              <li class="recruiting-link">Recruiting Post</li>
+              <li class="welcome-link">Welcome to My Personal Site!</li>
+              <li class="capone-link">A Great Summer at Capital One</li>
             </ul>
           </div><div class="hide my-col ">
             <ul>
@@ -103,25 +116,35 @@
   <script type="text/javascript">
     $('.blog-circle').click(() => {
       $('html, body').animate({
-          scrollTop: $('.welcome-story').offset().top
+          scrollTop: $('.recruiting-story').offset().top
       }, 200);
     });
-    $('.newest-square').click(() => {
+    $('.recruiting-square').click(() => {
+      $('html, body').animate({
+          scrollTop: $('.recruiting-story').offset().top
+      }, 200);
+    });
+    $('.welcome-square').click(() => {
       $('html, body').animate({
           scrollTop: $('.welcome-story').offset().top
       }, 200);
     });
-    $('.second-square').click(() => {
+    $('.capone-square').click(() => {
       $('html, body').animate({
           scrollTop: $('.capone-story').offset().top
       }, 200);
     });
-    $('.newest-link').click(() => {
+    $('.recruiting-link').click(() => {
+      $('html, body').animate({
+          scrollTop: $('.recruiting-story').offset().top
+      }, 200);
+    });
+    $('.welcome-link').click(() => {
       $('html, body').animate({
           scrollTop: $('.welcome-story').offset().top
       }, 200);
     });
-    $('.second-link').click(() => {
+    $('.capone-link').click(() => {
       $('html, body').animate({
           scrollTop: $('.capone-story').offset().top
       }, 200);
