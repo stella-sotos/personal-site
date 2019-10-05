@@ -372,10 +372,21 @@ li{
 	height: auto;
 	margin-top: 20px;
 }
+.blog-images-3 img{
+	width: calc(33% - 14px);
+	height: auto;
+	margin-top: 20px;
+}
 .left-blog{
+	margin-left: 0px;
 	margin-right: 12px;
 }
+.mid-blog{
+	margin-right: 12px;
+	margin-left:12px;
+}
 .right-blog{
+	margin-right: 0px;
 	margin-left:12px;
 }
 /*CALENDAR STYLES*/
@@ -642,7 +653,7 @@ h2.f4.text-normal.mb-3 {
 		height: 50px;
 		padding-bottom: 20px;
 	}
-	.blog-images img{
+	.blog-images .blog-images3 img{
 		width: 100%;
 		margin: 0;
 		margin-top: 10px;
