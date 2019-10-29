@@ -30,30 +30,30 @@
       <div class="name-banner">
         <h1>stella's blog</h1>
       </div>
-      <div class="circle blog-circle"><p >check out my newest post:</p> <div class="circle-text">My Grace Hopper Experience</div></div>
+      <div class="circle blog-circle"><p >check out my newest post:</p> <div class="circle-text">I Got a Job!</div></div>
     </div>
     <div class="newest-posts content">
         <div class="section-title"><h2>my newest posts</h2></div>
         <div class="posts-grid">
-          <div class="posts-row"><div class="post-square ghc-square">My Grace Hopper Experience
-           </div><div class="post-square welcome-square"> Welcome to My Personal Site!
-            </div></div><div class="posts-row"><div class="post-square capone-square">A Great Summer<br> at Capital One</div><div class="post-square  fade">coming soon!
-            </div></div>
+          <div class="posts-row"><div class="post-square job-square">I Got a Job!
+            </div><div class="post-square ghc-square">My Grace Hopper Experience
+           </div></div><div class="posts-row"><div class="post-square welcome-square"> Welcome to My Personal Site!
+            </div><div class="post-square capone-square">A Great Summer<br> at Capital One</div></div>
             <div class="all-button">view all posts</div>
         </div>
 
     </div>
     <div class="blog-section content">
-      <div class="story recruiting-story hide">
-        <div class="section-title"><h2>Recruiting Post (Update Title, tbd)</h2></div>
-        <div class="blog-date">October 30, 2019</div>
+      <div class="story job-story">
+        <div class="section-title"><h2>I Got a Job!</h2></div>
+        <div class="blog-date">October 28, 2019</div>
         <div class="blog-content">
           Recruiting is stressful! I've been figuring out where I'll be working full-time since July - JULY! It's the end of October now, and at last I know where I'm ending up. It wasn't easy getting here, but now that I'm on the otherside, I thought I'd share my experiences.<br><br>
-          I started off in a good spot - I loved my internship and was lucky enough to receive a return offer. From there I narrowed my search to companies I would consider going to over Capital One. In the summer, I started reaching out to my network including any recruiters I had spoken to during my internship search and friends who worked or interned at companies I was interested in. I'm still pretty connected to many of my high school classmates which proved super helpful during this stage (shoutout TJHSST!). I also attended the Grace Hopper Celebration in Orlando, Florida which was a great networking opportunity.<br><br>
-          Soon enough, I was interviewing all over the place. Some companies required coding challenges, while others went straight to phone screens. Regardless, I had to seriously brush up on my technical interview skills. My primary resources were LeetCode for practice problems, the book, Elements of Programming Interviews (EPI), and the YouTube channel, Back To Back SWE. I focused mostly on improving my dynamic programming skills and algorithm knowledge, as well as just being quicker on my feet when it came to common types of interview questions. I visited a few companies on-site and I was surprised by how prepared I felt. However, I don't think it was my technical knowledge that ended up helping me get my offers, instead I believe it was my communication skills that gave me my edge. I talked my interviewers through each stage of my thought process, thouroughly tested my code over edge cases, and iterated as necessary. In one of my first interviews I was sure that I flunked the technical problem I was given, but at the very end my interviewer told me that she liked how I thought. I ended up getting that offer. Communication skills can make all the difference!<br><br>
-          It was a lot to manage, but once I got through all my interviews I was so excited to receieve a few offers. The decision, on the other hand, started to get me down. I loved my internship at Capital One and they offered me a spot in New York, where I so badly wanted to be. On the other hand, I received incredible offers from Microsoft, Amazon, and Facebook. The opportunity for learning and growth at those companies would be hard to turn down. <... talk about actual decision> </div>
+          I started off in a good spot - I loved my internship and was lucky enough to receive a return offer. From there, I narrowed my search to companies I would consider over Capital One. In the summer, I started reaching out to my network including any recruiters I had spoken to during my internship search and friends who worked or interned at companies I was interested in. I'm still pretty connected to many of my high school classmates which proved super helpful during this stage. I also attended the Grace Hopper Celebration in Orlando, Florida which was a great networking opportunity.<br><br>
+          Soon enough, I was interviewing all over the place. Some companies required coding challenges, while others went straight to phone screens. Regardless, I had to seriously brush up on my technical interview skills. My primary resources were LeetCode for practice problems, the book, <a href="https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836">Elements of Programming Interviews</a>, and the YouTube channel, <a href="https://www.youtube.com/channel/UCmJz2DV1a3yfgrR7GqRtUUA">Back To Back SWE</a>. I focused mostly on improving my dynamic programming skills and algorithm knowledge. All the practice also helped with being quicker on my feet when it came to common types of interview questions. I visited a few companies on-site and I was surprised by how prepared I felt. However, I don't think it was my technical knowledge that ended up helping me get my offers, instead I believe it was my communication skills that gave me my edge. I talked through each stage of my thought process, thouroughly tested my code over edge cases, and iterated as necessary. In one of my first interviews I was sure that I flunked the technical problem I was given, but at the very end my interviewer told me that she liked how I thought. I ended up getting that offer. Communication skills can make all the difference!<br><br>
+          It was a lot to manage, but once I got through all my interviews I was so excited to receieve a few offers. The decision, on the other hand, started to get me down. I loved my internship at Capital One and they offered me a spot in New York, where I so badly wanted to be. On the other hand, I received incredible offers from Microsoft, Amazon, and Facebook. The opportunity for learning and growth at those companies would be hard to turn down. <br><br>Finally, after much deliberation, I am so excited to annouce that I will be joining Facebook as a Software Engineer in the fall of 2020. I'll be located in Menlo Park, California and I couldn't be more excited for what's to come. </div>
         <div class="blog-tags">
-          <div class="tag">#recruiting</div><div class="tag">#futureEngineer</div>
+          <div class="tag">#recruiting</div><div class="tag">#facebook</div>
         </div>
       </div>
       <div class="story ghc-story">
@@ -117,6 +117,7 @@
         <div class="two-col">
           <div class="my-col">
             <ul>
+              <li class="job-link">I Got a Job!</li>
               <li class="ghc-link">My Grace Hopper Experience</li>
               <li class="welcome-link">Welcome to My Personal Site!</li>
               <li class="capone-link">A Great Summer at Capital One</li>
@@ -132,7 +133,12 @@
   <script type="text/javascript">
     $('.blog-circle').click(() => {
       $('html, body').animate({
-          scrollTop: $('.ghc-story').offset().top
+          scrollTop: $('.job-story').offset().top
+      }, 200);
+    });
+    $('.job-square').click(() => {
+      $('html, body').animate({
+          scrollTop: $('.job-story').offset().top
       }, 200);
     });
     $('.ghc-square').click(() => {
@@ -148,6 +154,11 @@
     $('.capone-square').click(() => {
       $('html, body').animate({
           scrollTop: $('.capone-story').offset().top
+      }, 200);
+    });
+    $('.job-link').click(() => {
+      $('html, body').animate({
+          scrollTop: $('.job-story').offset().top
       }, 200);
     });
     $('.ghc-link').click(() => {

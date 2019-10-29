@@ -496,6 +496,20 @@ h2.f4.text-normal.mb-3 {
 #user-activity-overview{
     display:none;
 }
+/*Socials Styles*/
+.socials{
+	/*position: fixed;
+	bottom: 0;
+	display: inline-block;*/
+	padding-top:20px;
+	display: none;
+}
+.socials img{
+	height: 45px;
+	width: auto;
+	display: inline-block;
+	padding: 0 10px;
+}
 /*Media Queries*/
 @media screen and (max-width: 1000px) {
 	.name-banner p {
