@@ -35,6 +35,9 @@ body{
 .nav-link:hover{
 	color:#F4F3F0;
 }
+.menu-link{
+	display: none;
+}
 .nav a{
 	text-decoration: none;
 	color: #343E3D;
@@ -276,6 +279,10 @@ li{
 	background-color:#FC7753; 
 	color:#F4F3F0;
 }
+.Voteology-square{
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
 .all-button{
 	text-align: center;
 	width: calc(100% - 60px);
@@ -298,11 +305,13 @@ li{
 .two-col{
 	display: inline-block;
 	width: 100%;
+	vertical-align: top;
 }
 .my-col{
 	display: inline-block;
 	margin-right: 40px;
 	width: calc(50% - 40px);
+	vertical-align: top;
 }
 .my-col li:hover{
 	color:#FC7753;
@@ -341,7 +350,7 @@ li{
 }*/
 .circle p{
 	text-align: center;
-	margin: 100px 30px 0 30px;
+	margin: 85px 30px 0 30px;
 	font-style: italic;
 
 }
@@ -377,6 +386,11 @@ li{
 	height: auto;
 	margin-top: 20px;
 }
+.blog-images-4 img{
+	width: calc(25% - 18px);
+	height: auto;
+	margin-top: 20px;
+}
 .left-blog{
 	margin-left: 0px;
 	margin-right: 12px;
@@ -389,10 +403,12 @@ li{
 	margin-right: 0px;
 	margin-left:12px;
 }
+/*GALLERY STYLES*/
 /*CALENDAR STYLES*/
 .calendar {
     text-align: center;
     margin-top: 30px;
+    display: none;
 }
 
 .calendar-graph text.wday,
@@ -511,11 +527,22 @@ h2.f4.text-normal.mb-3 {
 	padding: 0 10px;
 }
 /*Media Queries*/
+@media screen and (max-width: 1200px) {
+	.Voteology-square{
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.name-banner p {
 	    font-size: 50px;
 	    margin: 50px 0 50px 0;
 	}
+	.name-banner h1 {
+    	font-size: 50px;
+    	padding: 50px;
+	}	
 	.circle {
 	    height: 250px;
 	    width: 250px;
@@ -524,10 +551,26 @@ h2.f4.text-normal.mb-3 {
 		height: 200px;
 		width:200px;
 	}
+	.circle-text{
+		font-size: 20px;
+	}
 	.post-square{
 		padding-top: 20px;
 		padding-bottom: 20px;
 		height:120px;
+	}
+	.post-square{
+		padding-top: 40px;
+		height: 90px;
+	}
+	.posts-row{
+		display: block;
+		width: 100%;
+	}.my-col{
+		display: block;
+		margin-right: 0;
+		width: 100%;
+		vertical-align: top;
 	}
 	.circle p{
 		margin-top: 70px;
@@ -541,25 +584,32 @@ h2.f4.text-normal.mb-3 {
 	.name-banner p{
 		padding: 40px;
 	}
+	.name-banner h1{
+		padding: 40px;
+		font-size: 45px;
+	}
 	.circle {
 	   	text-align: center;
 	   	display: block;
-    	left: calc(50% - 100px);
-    	height: 200px;
-	    width: 200px;
+	   	position: static;
+    	margin-left: calc(50% - .5 * 40vh);
+    	height: 40vh;
+    	width: 40vh;
 	}
 	.circle img{
-		height: 170px;
-		width:170px;
-		margin: 15px 15px 15px 15px;
+		height:  34vh;
+		width: 34vh;
+		margin: 3vh;
 
 	}
-	.circle p{
-		margin-top: 40px;
-	}
-	.circle-text{
-		font-size:22px;
-	}
+	.circle p {
+    	padding: 8vh 6vh 0px 6vh;
+    	font-size: 2.5vh;
+    }
+    .circle-text{
+    	margin: 1vh 7vh 0 7vh;
+    	font-size: 3vh;
+    }
 	.content {
 	    display: inline-block;
 	    padding: 30px 50px 50px 50px;
@@ -575,13 +625,15 @@ h2.f4.text-normal.mb-3 {
 		width: 100%;
 	}
 	.connect-button {
-    	width: calc(50% - 15px);
+    	display: block;
+    	width: 100%;
+    	margin: 10px 0;
     }
     .left{
 		margin-right: 15px;
 	}
 	.right{
-		margin-left: 15px;
+		
 	}
 	.work-logo{
 		display: block;
@@ -594,32 +646,44 @@ h2.f4.text-normal.mb-3 {
 		width: 100%;
 		margin-left: 0;
 	}
-	.post-square{
-		padding-top: 40px;
-		height: 90px;
+	
+}
+@media screen and (max-width: 650px) {
+	.Voteology-square{
+		padding-top: 15px;
+		padding-bottom: 45px;
 	}
-	.posts-row{
+	
+	.nav-link{
+		font-size: 16px;
+		padding: 3px 0;
+	}
+	.nav{
+		padding: 15px 0;
+	}
+	.menu-link{
 		display: block;
-		width: 100%;
-	}.my-col{
-		display: block;
-		margin-right: 0;
-		width: 100%;
+
+	}
+	.home-link, .about-link, .exp-link, .con-link, .blog-link{
+		display: none;
 	}
 }
-@media screen and (max-width: 425px) {
-	.nav-link{
-		display: block;
-    	padding: 2px 0;
-    	font-size:16px;	
 
-    }
+@media screen and (max-width: 500px) {
+
 	.name-banner p{
 		margin: 0;
 		margin-top: 40px;
 		padding: 10px 0 10px 0;
 		font-size: 26px;
 	}
+	.name-banner h1{
+		padding: 30px;
+		font-size: 35px;
+		margin: 40px;
+	}
+
 	.section-title{
 		font-size: 22px;
 	}
@@ -639,13 +703,7 @@ h2.f4.text-normal.mb-3 {
 	.posts-grid{
 		font-size: 16px;
 	}
-	.circle{
-		bottom:10vh;
-		font-size: 16px;
-	}
-	.circle-text{
-		font-size: 20px;
-	}
+
 	.landing {
     	height: calc(100vh - 195px);
     }
@@ -660,21 +718,56 @@ h2.f4.text-normal.mb-3 {
 	.article-links{
 		margin-left: 0;
 	}
+	.content{
+		padding: 20px 20px 20px 20px;
+		width: calc( 100% - 40px);
+	}
+	.allposts{
+		padding-bottom: 60px;
+	}
+	.connect{
+		padding-bottom: 30px;
+	}
+	.section-title h2 {
+		font-size: 22px;
+	}
+
 	.post-square{
 		display: block;
 		width: calc(100% - 80px);
 		margin: 20px;
 		height: 50px;
 		padding-bottom: 20px;
+		font-size: 15px;
 	}
-	.blog-images .blog-images3 img{
+	.Voteology-square{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.story{ 
+		margin-top: 0px;
+		margin-bottom: 20px; 
+	}
+	.blog-images img{
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+		display: block;
+	}
+	 .blog-images-3 img{
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+		display: block;
+	}
+	 .blog-images-4 img{
 		width: 100%;
 		margin: 0;
 		margin-top: 10px;
 		display: block;
 	}
 }
-@media screen and (min-width: 1290px){
+@media screen and (min-width: 1300px){
 	.circle{
 		height: 400px;
 		width: 400px;
@@ -686,5 +779,37 @@ h2.f4.text-normal.mb-3 {
 		width:320px;
 	    margin: 40px 40px 40px 40px;
 
+	}
+	.circle p{
+		margin: 140px 60px 0px 60px;
+    	font-size: 25px;
+	}
+	.circle-text{
+		margin: 50px;
+		margin-top: 20px;
+		font-size: 40px;
+	}
+}
+@media screen and (min-height: 1290px){
+	.circle{
+		height: 500px;
+		width: 500px;
+		bottom: 10%;
+		right: 10%;
+	}
+	.circle img{
+		height: 420px;
+		width:420px;
+	    margin: 40px 40px 40px 40px;
+
+	}
+	.circle p{
+		margin: 140px 60px 0px 60px;
+    	font-size: 25px;
+	}
+	.circle-text{
+		margin: 50px;
+		margin-top: 20px;
+		font-size: 40px;
 	}
 }

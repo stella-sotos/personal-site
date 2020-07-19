@@ -24,11 +24,12 @@
   </head>
   <body>
   	<div class="nav">
-  		 <div class="nav-link about-link" ><a href="index.html">home</a></div>
-      <div class="nav-link about-link">about</div>
-      <div class="nav-link exp-link">experience</div>
-      <div class="nav-link con-link">connect</div>
-      <div class="nav-link blog-link"><a href="blog.html">blog</a></div>
+      <div class="nav-link menu-link" id="menu">menu</div>
+  		<div class="nav-link home-link" id="home" ><a href="index.html">home</a></div>
+      <div class="nav-link about-link" id="about">about</div>
+      <div class="nav-link exp-link" id="exp">experience</div>
+      <div class="nav-link con-link" id="con">connect</div>
+      <div class="nav-link blog-link" id="blog"><a href="blog.html">blog</a></div>
   	</div>
   	<div class="landing">
   		<div class="name-banner">
@@ -113,7 +114,7 @@
             <div class="work-date">2016-2020</div>
           </div><div class="work-info">
             <div class="work-title">Computer Science and Math Major</div>
-            <div class="work-desc">I am a student in the College of Arts and Sciences at the University of Virgina with a double major in computer science and math. I expect to graduate in May of 2020. <br><br> During my time at the University, I have volunteered as an assistant coach for a local elementary school's Girls on the Run. The program aims to promote positive attitudes and healthy lifestyles in young girls. I have also volunteered with English Speakers of Other Languages (ESOL) at Charlottesville's Buford Middle School tutoring Spanish-speaking students in Math.</div>
+            <div class="work-desc">I graduated with distinction from the College of Arts and Sciences at the University of Virgina with a double major in computer science and math. <br><br> During my time at the University, I  volunteered as an assistant coach for a local elementary school's Girls on the Run. The program aims to promote positive attitudes and healthy lifestyles in young girls. I  also volunteered with English Speakers of Other Languages (ESOL) at Charlottesville's Buford Middle School tutoring Spanish-speaking students in Math. I was also very involved with HackCville completing semester-long programs in Data Science and Web Design before completing their Launch Academy summer internship for Web Design.</div>
           </div>
         </div>
         <div class="work-item">
@@ -164,6 +165,15 @@
       $('html, body').animate({
           scrollTop: $('.connect').offset().top
       }, 200);
+    });
+    $('.menu-link').click(() => {
+      document.getElementById('home').style.display = 'block';
+      document.getElementById('about').style.display = 'block';
+      document.getElementById('exp').style.display = 'block';
+      document.getElementById('con').style.display = 'block';
+      document.getElementById('blog').style.display = 'block';
+      document.getElementById('menu').style.display = 'none';
+      
     });
   </script>
 </html>

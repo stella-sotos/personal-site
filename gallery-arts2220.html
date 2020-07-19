@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Stella Sotos Art Project</title>
+    <link rel="shortcut icon" type="image/png" href="images/sIcon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146161243-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146161243-1');
+    </script>
+
+  </head>
+  <body>
+  	<div class="nav">
+      <div class="nav-link menu-link" id="menu">menu</div>
+      <div class="nav-link home-link" id="home" ><a href="index.html">home</a></div>
+      <div class="nav-link about-link" id="about"><a href="index.html">about</a></div>
+      <div class="nav-link exp-link" id="exp"><a href="index.html">experience</a></div>
+      <div class="nav-link con-link" id="con"><a href="index.html">connect</a></div>
+      <div class="nav-link blog-link" id="blog"><a href="blog.html">blog</a></div>
+    </div>
+    <div class="blog-section content">
+      <div class= "story">
+        <h2 style="text-align: center;">Arts 2220 Project on the Overconsumption of Meat</h2>
+        <div class="blog-images">
+          <img src="images/ARTS2220/Stella_Sotos_Project1_Edition1.jpg" class="left-blog"/><img src="images/ARTS2220/Stella_Sotos_Project_Edition2.jpg" class="right-blog"/>
+        </div>
+         <div class="blog-content">
+          <br>
+            With this project I wanted to discuss the overconsumption of meat in America and the repercussions on the environment. I ended up focusing specifically on cows since they are a prominent symbol of animal agriculture and since the negative impact of consuming beef is so extreme. 
+            <br><br>I featured many vintage advertisements for meat, demonstrating America's long running attachment to and nostalgia for these products. The repetition in my imagery is used to showcase the scale of this issue. The landscapes I featured are faded and depleted as a result of this phenomenon.
+            <br><br>This was one of my very first projects using Adobe Photoshop. I am proud of how these images turned out and of the clarity of my message.
+            <br><br>
+            <a href="blog.html">Click here to return to my blog!</a>
+          </div>
+    </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    
+    $('.menu-link').click(() => {
+      document.getElementById('home').style.display = 'block';
+      document.getElementById('about').style.display = 'block';
+      document.getElementById('exp').style.display = 'block';
+      document.getElementById('con').style.display = 'block';
+      document.getElementById('blog').style.display = 'block';
+      document.getElementById('menu').style.display = 'none';
+      
+    });
+  </script>
+  </html>
