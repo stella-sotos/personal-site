@@ -382,7 +382,7 @@ li{
 	margin-top: 20px;
 }
 .blog-images-3 img{
-	width: calc(33% - 14px);
+	width: calc(33% - 15px);
 	height: auto;
 	margin-top: 20px;
 }
@@ -571,6 +571,9 @@ h2.f4.text-normal.mb-3 {
 		margin-right: 0;
 		width: 100%;
 		vertical-align: top;
+	}
+	ul{
+		margin: 0;
 	}
 	.circle p{
 		margin-top: 70px;
