@@ -26,9 +26,9 @@
   	<div class="nav">
       <div class="nav-link menu-link" id="menu">menu</div>
   		<div class="nav-link home-link" id="home" ><a href="index.html">home</a></div>
-      <div class="nav-link about-link" id="about">about</div>
-      <div class="nav-link exp-link" id="exp">experience</div>
-      <div class="nav-link con-link" id="con">connect</div>
+      <div class="nav-link about-link" id="about" ><a href="#aboutMe">about</a></div>
+      <div class="nav-link exp-link" id="exp"><a href="#experience">experience</a></div>
+      <div class="nav-link con-link" id="con"><a href="#connect">connect</a></div>
       <div class="nav-link blog-link" id="blog"><a href="blog.html">blog</a></div>
   	</div>
   	<div class="landing">
@@ -39,14 +39,14 @@
       <img src="images/pfp.jpg" alt="Stella Sotos, University of Virginia Computer Science Student"/>
       </div>
   	</div>
-   <div class="about">
+   <div class="about" id="aboutMe">
    	<div class="section-title"><h2>about me</h2></div>
    	<div class="content">
    		<div class="about-rectangle"><img src="images/run.jpg" alt="Stella Sotos, running a marathon"  /></div><div class="about-text"><p>I'm a recent graduate of the University of Virginia with a double major in computer science and math. I love what I studied and I can't wait to pursue a career as a software engineer at Facebook, starting in August 2020. I give my all to everything that I do whether that be my school work, my job, or my hobbies. In my freetime, I love to run marathons, do yoga, and cook delicious vegan meals.</p><p>In my past internships I've gained a wide variety of experience. At Capital One, I learned what it's like to work within an agile team and I loved it! It was so exciting and rewarding to write my own code for the consumer-facing application. Prior to that, my experience was within start-up companies. There, I was able to contribute to a variety of aspects of business spanning research, marketing, design and web development. I've gained so much from these summers and am thrilled to continue growing in my career as a developer.</p><p class="blog-shout-out">Want to learn more about me and my interests? <a href="blog.html">Check out my blog!</a></p></div>
 
    	</div>
    </div>
-   <div class="experience">
+   <div class="experience" id="experience">
    	<div class="section-title"><h2>my experience</h2></div>
    	<div class="content">
       <div class="history">
@@ -65,7 +65,8 @@
             <div class="work-date">Summer 2019</div>
           </div><div class="work-info">
             <div class="work-title">Software Engineering Intern</div>
-            <div class="work-desc"><p>As part of the Technology Intern Program, I was fully immersed in the work of a development team. I learned React and improved my fluency in JavaScript, practiced the agile methodology and learned what it is like to develop for a large technology company. <br><br>During my 10 weeks as an intern, I was tasked with developing a new feature for Capital One's credit card application. For this project, I met with various teams to discuss the requirements for this feature, made changes to the design for consistency and developed the feature from scratch in React with Redux. As the lead developer for this feature, I created unit tests, organized code reviews and was wholly responsible for my code. Outside of my intern project, I was involved with the core of my team's work taking on stories each sprint. From these I learned about AB testing features in production, tracking interaction with the UI, and the scripts that monitor the application in production and alert the engineers if anything goes wrong. I've learned so much and feel that not only have I grown as an engineer but also that I've made significant contributions to my team at Capital One.</p></div>
+            <div class="work-desc"><p>As part of the Technology Intern Program, I was fully immersed in the work of a development team. I learned React and improved my fluency in JavaScript, practiced the agile methodology and learned what it is like to develop for a large technology company. <br><br>During my 10 weeks as an intern, I was tasked with developing a new feature for Capital One's credit card application. For this project, I met with various teams to discuss the requirements for this feature, made changes to the design for consistency and developed the feature from scratch in React with Redux. As the lead developer for this feature, I created unit tests, organized code reviews and was wholly responsible for my code. Outside of my intern project, I was involved with the core of my team's work taking on stories each sprint. From these I learned about AB testing features in production, tracking interaction with the UI, and the scripts that monitor the application in production and alert the engineers if anything goes wrong. I've learned so much and feel that not only have I grown as an engineer but also that I've made significant contributions to my team at Capital One.
+            <br><br><a href="blog.html#CapitalOneInternship">Read more about my Capital One experience in my blog! </a></p></div>
           </div>
         </div>
         <div class="work-item">
@@ -139,7 +140,7 @@
 	</div>
 </div>
    
-   <div class="connect">
+   <div class="connect" id="connect">
    	<div class="section-title"><h2>let's connect!</h2></div>
     <div class="content">
       Email me at <a href="mailto:stelsotos@gmail.com">stelsotos@gmail.com</a>, add me on <a href="https://www.linkedin.com/in/stellasotos/">LinkedIn</a>, or take a look at some of my code on <a href="https://github.com/stella-sotos">GitHub</a>!  
@@ -151,21 +152,6 @@
    
   </body>
   <script type="text/javascript">
-    $('.about-link').click(() => {
-      $('html, body').animate({
-          scrollTop: $('.about').offset().top
-      }, 200);
-    });
-    $('.exp-link').click(() => {
-      $('html, body').animate({
-          scrollTop: $('.experience').offset().top
-      }, 200);
-    });
-    $('.con-link').click(() => {
-      $('html, body').animate({
-          scrollTop: $('.connect').offset().top
-      }, 200);
-    });
     $('.menu-link').click(() => {
       document.getElementById('home').style.display = 'block';
       document.getElementById('about').style.display = 'block';
