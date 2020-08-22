@@ -19,7 +19,7 @@
 
   </head>
   <body>
-  	<div class="nav">
+  	<div class="nav" id="top">
       <div class="nav-link menu-link" id="menu">menu</div>
   		<div class="nav-link home-link" id="home" ><a href="index.html">home</a></div>
       <div class="nav-link about-link" id="about"><a href="index.html#aboutMe">about</a></div>
@@ -27,6 +27,7 @@
       <div class="nav-link con-link" id="con"><a href="index.html#connect">connect</a></div>
       <div class="nav-link blog-link" id="blog"><a href="blog.html">blog</a></div>
   	</div>
+     <div class="back-to-top" id="arrow"><a href="blog.html#top"><img src="images/upArrow.png"/></a></div>
     <div class="blog-landing">
       <div class="name-banner">
         <h1>stella's blog</h1>
@@ -191,5 +192,13 @@
       document.getElementById('menu').style.display = 'none';
       
     });
+    window.addEventListener("scroll",function() { 
+     if(window.scrollY > Math.round(window.innerHeight / 100) +180) {
+        document.getElementById('arrow').style.display = 'block';
+     }
+     else {
+        document.getElementById('arrow').style.display = 'none';
+
+   }},false);
   </script>
   </html>
